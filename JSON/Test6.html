@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>JSON Tutorial</title>
+</head>
+<body>
+ <script type="text/javascript">
+  var data = {
+     "color" : ["red","orange","yellow"],
+    "condition" : [
+        {"name" : "sandeep","city" : "Kanpur"},
+        {"name":"Amit","city" : "Noida"},
+        {"name" : "Sunil", "city" : "Kanpur"}
+    ]
+    
+  };
+
+  function sendJSON(){
+      window.location = 'handleJSON.html?x=' + JSON.stringify(data);
+    
+  }
+  
+  </script>
+  <button onclick ="sendJSON()">Send JSON DATA</button>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>JSON Tutorial</title>
+</head>
+<body>
+ <script type="text/javascript">
+  var data = {
+     "color" : ["red","orange","yellow"],
+    "condition" : [
+        {"name" : "sandeep","city" : "Kanpur"},
+        {"name":"Amit","city" : "Noida"},
+        {"name" : "Sunil", "city" : "Kanpur"}
+    ]
+    
+  };
+
+  document.write(data);// output this [object Object]
+  document.write(JSON.stringify(data));//stringfy se object string me change hota hai
+  
+  </script>
+<!--  <button onclick ="sendJSON()">Send JSON DATA</button> -->
+</body>
+</html>

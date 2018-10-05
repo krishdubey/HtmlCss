@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>JSON Tutorial</title>
+</head>
+<body>
+ <script type="text/javascript">
+  var data = {
+     "color" : ["red","orange","yellow"],
+    "condition" : [
+        {"name" : "sandeep","city" : "Kanpur"},
+        {"name":"Amit","city" : "Noida"},
+        {"name" : "Sunil", "city" : "Kanpur"}
+    ]
+    
+  };
+
+  
+    
+  var data2 = '{"name":"Sandeep","city" : "Kanpur", "number" : 20}';
+  var jsonobject = JSON.parse(data2);// string convert into object
+  document.write(jsonobject.name);
+  
+  </script>
+  
+</body>
+</html>

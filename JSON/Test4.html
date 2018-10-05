@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>JSON Tutorial</title>
+</head>
+<body>
+ <script type="text/javascript">
+  var data = {
+     "color" : ["red","orange","yellow"],
+    "condition" : [
+        {"name" : "sandeep","city" : "Kanpur"},
+        {"name":"Amit","city" : "Noida"},
+        {"name" : "Sunil", "city" : "Kanpur"}
+    ]
+    
+  };
+
+  for (i in data.color) // one way to find array data
+  {
+      document.write(data.color[i]  +  "<br />");
+  }
+  for( i =0; i < data.color.length;i++)// second way to find arraydata
+  {
+      document.write(data.color[i] + "<br />");
+  }
+  for(i in data.condition)
+  {
+      for(j in data.condition[i])
+      {
+          document.write(data.condition[i][j] + "<br />")
+      }
+  }
+
+  document.write(data.condition[1]["city"]);//noida
+ 
+  </script>
+</body>
+</html>

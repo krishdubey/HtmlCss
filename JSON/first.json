@@ -1,0 +1,14 @@
+<html>
+<head>
+<title>JSON Tutorial</title>
+</head>
+<body>
+ <script type="text/javascript">
+  var data={
+    "name" : "krishna",
+    "city"  : "Delhi"
+  };
+  document.write(data.name);
+  </script>
+</body>
+</html>
